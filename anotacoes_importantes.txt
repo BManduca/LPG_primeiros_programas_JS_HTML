@@ -1,0 +1,22 @@
+<a> -> tag chamada âncora, que é representada pela letra a.
+ - através do atributo href, pode ser indicado o endereço que será acessado e este atributo
+ se encontra declarado dentro da tag
+
+ é utilizado tags HTML de âncora para criar links na web, a palavra ou frase 
+ que é declarada dentro do atributo presente na tag <a>, sempre aparecerá em destaque.
+
+ o HTML é estático, por isso para vermos diferenças ou alterações no código, 
+ precisamos alterar salvar e recarregar o navegador.
+
+ um linguagem que é dinâmica e pode ser utilizado lado a lado com HTML e que realmente é 
+ uma linguagem de programação é o JavaScript, porém, para toda alteração feita em 
+ JS, é preciso colocar toda essa parte que pertence ao JS dentro da tag <script></script>
+
+Para criar um alerta em JS, é so colocarmos dentro da tag como comentado a cima, a seguinte
+intrução alert("");, com o texto que será apresentado em tela.
+ Ao reiniciar o navegador, aparecerá o pop-up com a mensagem declarada.
+
+ para(se caso ocorrer o erro com acentuação), pode ser corrigido, conforme a seguinte 
+ tag composta com atributo charset: <meta charset="UTF-8">
+
+ 
