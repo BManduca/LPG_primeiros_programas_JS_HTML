@@ -19,4 +19,47 @@ intrução alert("");, com o texto que será apresentado em tela.
  para(se caso ocorrer o erro com acentuação), pode ser corrigido, conforme a seguinte 
  tag composta com atributo charset: <meta charset="UTF-8">
 
- 
+
+
+ HTML sendo uma linguagem estática, não é uma linguagem de programação propriamente 
+ dita, inclusive HTML significa Hyper Text Markup Language, como podemos ver, 
+ não há a presença da palavra programming. 
+ O HTML foi criado apenas para apresentar informações, ou seja, sem dinamismo.
+
+Exemplo:
+
+<h1>Sejam bem vindos</h1>
+<br>
+Seria isso um programa?
+
+e se por algum acaso, fosse decidido efetuar cálculos que variam de acordo com a entrada 
+do usuário?
+Não será possível, pois, o HTML irá no máximo ser responsável em exibir o resultado 
+do cálculo, mas não irá realizá-lo nem nada...somente mostrar
+
+
+Porém, o navegador não conhece somente a a linguagem HTML, conhece além disso...
+conhece outra que é totalmente dinâmica, que é a JavaScript, através dela 
+poderemos realizar cálculos e diversas operações úteis. 
+
+Apartir de agora, usaremos as duas linguagens lado a lado, o JavaScripte o HTML, 
+para criar programas muito interessantes.
+
+assim, como a língua portuguesa, possuí regras, toda linguagem de programação também as possui 
+e isso não é diferente com o JavaScript, se deixarmos de seguir essas regras ou a sintaxe a risca, 
+o código corre o risco de não funcionar.
+
+A função alert é capaz de exibir um popup na tela do navegador, inclusive a mesma é capaz
+de receber um texto que será exibido no popup. É importante saber que no JavaScript, existe 
+a distinção entre letras maiúsculas e minúsculas, portanto, ao escrever alert ou ALERT, 
+terá uma diferença sim e o comando não será reconhecido e o interpretador acusará 
+erro de sintaxe.
+Texto em JS sempre vem entre "", isso foi definido pelos criadores da linguagem e o termo 
+na verdade para texto em JavaScript é string.
+
+
+
+
+
+
+
