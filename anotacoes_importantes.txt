@@ -58,8 +58,58 @@ Texto em JS sempre vem entre "", isso foi definido pelos criadores da linguagem 
 na verdade para texto em JavaScript é string.
 
 
+Aprendemos a utilizar o alert, porém, para ficar exibindo um texto para o usuário via 
+alert, não é algo tão indicado...tornando a experiência com o usuário bem ruim.
+Se caso, o usuário quiser ler somente a última linha, não conseguirá, porque surgirão muitos
+alerts seguidos.
+
+O que pode ser feito?
+No mundo JS, tudo que está inserido dentro de <script>, será interpretado pela linguagem.
+O mundo HTML ẽ compreendido como tudo que está fora da tag <script>.
+apartir do mundo JS, escreveremos HTML. Para isto, adicionaremos document.write();
+
+documento -> documento
+Nossa página HTML, nosso programa, é um documento.
+write -> escrever
+Como podemos ver o write recebe parenteses no final, significa que o write pode receber parâmetros, ou 
+seja, ela aceita receber algo para escrever no documento e também podemos lembrar que o texto
+no JS é incluido entre aspas.
+
+O texto como ja vimos também, é chamado de string, tanto em JS como em muitas outras linguagens.
 
 
+o document.write() aceita tanto string quanto numerais, onde é possível também fazer operações dentro
+do mesmo.
+
+operações dentro do JS envolvendo numerais, resulta em um numeral, porém, operações como soma
+envolvendo strings, resulta na concatenação das strings
+
+ao tentar fazer uma operação por exemplo de soma, entre uma string e um numeral, vai resultar 
+na concatenação dos dois, pois o JS vai converter por debaixo dos panos o numeral para uma string.
 
 
+para realizar um calculo de média por exemplo, 
+podemos utilizar da seguinte forma:
+document.write(" Média = " + (20+10+30)/3);
+
+que o JS, vai resolver primeiramente e interpretar a 
+conta como uma string e concatenar com a palavra Média.
+
+
+o interpretador sempre vai analisar se primeiramente existe algum parenteses, que precisa ser estudado 
+ou resolvido, após, essa análise, o interpretador, fará o estudo geral sempre da esquerda para a direita.
+
+e se caso eu quisesse, fazer a seguinte situação de imprimir o ano de nascimento de 3 pessoas aleátorias....
+podemos ver que no final de cada write, existe uma quebra de linha.
+
+document.write("Flávio nasceu em" + (2016 - 39) + "<br>");
+document.write("Joaquim nasceu em" + (2016 - 20) + "<br>");
+document.write("Barney nasceu em" + (2016 - 40) + "<br>");
+
+
+na matemática operações de divisão e multiplicação são realizadas primeiro. O 
+mesmo ocorre no universo da programação e esse fenômeno denomina-se Procedência entre operadores.
+
+sendo assim, no exemplo do professor, seria feito primeiro a divisão entre 400 e 4
+e depois a soma com os outros valores, resultando assim em uma média errada.
 
