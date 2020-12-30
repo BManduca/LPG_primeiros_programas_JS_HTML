@@ -113,3 +113,32 @@ mesmo ocorre no universo da programação e esse fenômeno denomina-se Procedên
 sendo assim, no exemplo do professor, seria feito primeiro a divisão entre 400 e 4
 e depois a soma com os outros valores, resultando assim em uma média errada.
 
+
+Em nosso programa, conseguimos este efeito de guardar um valor, por meio da criação
+de variáveis. Como o próprio some sugere, elas variam e são representadas da seguinte forma:
+
+var ano;
+
+Para definir um valor para a variável ano, usamos o =, que significa receber nesta linguagem, 
+e podemos inserir qualquer valor dentro desta variavel.
+
+como por exemplo: 
+
+var ano = 1992;
+assim, poderemos utilizar a variavel ano em vários locais do nosso código, sem 
+precisar ficar repetindo ou copiando e colando um valor 
+
+Quando o JS se depara com a variavel ano, ele somente a interpretará como uma string
+se estiver em aspas ("ano"), como não é o caso, será verificado se não é um número, não 
+se tratando de um numeral, o JS determinará se é uma variável, anterioremente escrevemos 
+var ano, desta forma, ela passa a existir e quando o valor for computado, a palavra ano 
+será trocado pelo valor armazenado na variável.
+
+A parte interessante de trabalhar com variaveis, é que ao declararmos as mesmas em um 
+único ponto, várias intruções podem depender de uma mesma variável e, quando alternamos 
+seu valor, isso é refletido em todos os pontos do código onde aparece.
+
+o navegador processa  a tag <script> linha a linha, na ordem em que foram declaradas. Na primeira, 
+teremos a informação de que a variável ano recebe o valor 1992, desta forma, o código irã assumir 
+na parte de texto, o valor definido na variavel.
+
