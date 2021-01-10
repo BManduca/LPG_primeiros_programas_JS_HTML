@@ -1,0 +1,32 @@
+<meta charset="UTF-8">
+
+<script>
+
+    anoDescobrimento = 1500;
+    anoAtual = 2021;
+
+    function pulaLinha() {
+        document.write("<br><br>");
+    }
+
+    function exibeTitulo(titulo) {
+        document.write("<h1>" + titulo + "</h1>");
+        pulaLinha();
+    }
+
+    function mostra(mensagem){
+        document.write(mensagem);
+    }
+
+    function mediaGeracoes(ano1,ano2){
+
+        var diferenca = (ano2 - ano1);
+        var media = Math.round(diferenca/28);
+        mostra("Se passaram " + diferenca + " anos e uma média de " + media + " Brasileiros.");
+
+    }
+
+    exibeTitulo("O problema de Gerações...");
+    mediaGeracoes(anoDescobrimento,anoAtual);
+
+</script>

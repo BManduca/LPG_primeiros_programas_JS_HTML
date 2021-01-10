@@ -1,0 +1,37 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+
+    }
+
+    function marcacao() {
+        document.write("<hr>");
+    }
+
+    function mostra(mensagem){
+        marcacao();
+        document.write("<big>" + mensagem + "<big>");
+        pulaLinha();
+    }
+
+    function mostraTitulo(titulo) {
+
+        document.write("<h1>" + titulo + "</h1>");
+        pulaLinha();
+
+    }
+
+    var ano = 2021;
+
+    mostraTitulo("Relação Nome x Ano de Nascimento: ");
+    mostra("Brunno nasceu em " + (ano - 29));
+    mostra("Gabriela nasceu em " + (ano - 40));
+    mostra("Maria nasceu em " + (ano - 34));
+    mostra("João nasceu em " + (ano - 25));
+    marcacao();
+    
+</script>

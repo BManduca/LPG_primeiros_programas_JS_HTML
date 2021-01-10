@@ -1,0 +1,31 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostrarMensagem(mensagem) {
+        document.write(mensagem);
+        pulaLinha();
+    }
+
+    var ano = 2020;
+    var idadeBrunno = (ano - 1992);
+    var idadeAnderson = (ano - 1980);
+
+    mostrarMensagem("Rapazes: ");
+    mostrarMensagem("Brunno tem " + idadeBrunno + " anos");
+    mostrarMensagem("Anderson tem " + idadeAnderson + " anos");
+
+    ano = 2017;
+    var idadeGabriela = (ano - 1992);
+    var idadeTracy = (ano - 1980);
+
+    pulaLinha();
+    mostrarMensagem("Moças: ");
+    mostrarMensagem("Gabriela tem " + idadeGabriela + " anos");
+    mostrarMensagem("Tracy tem " + idadeTracy + " anos");
+
+</script>

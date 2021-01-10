@@ -11,9 +11,30 @@
     // document.write(2020 - 28 + "<br>");
     // document.write(" Média = " + (20+10+30)/3);
 
-    var ano = 2020;
+    // var ano = 2020;
 
-    document.write("Brunno tem: " + (ano - 1992) + " anos<br>");
-    document.write("Nasceu em: " + (ano - 28));
+    // document.write("Brunno tem: " + (ano - 1992) + " anos<br>");
+    // document.write("Nasceu em: " + (ano - 28));
+
+    var ano = 2016;
+    var idadeBrunno = (ano - 1996);
+    var idadeJoao = (ano - 1977);
+
+    document.write("No ano de 2020: <br>");
+    document.write("Brunno tem " + idadeBrunno + " anos <br>");
+    document.write("João tem " + idadeJoao + " anos <br>");
+
+    ano = 2017
+    var idadeGabriela = (ano - 1976);
+    document.write("<br>No ano de 2021: <br>");
+    document.write("Gabriela tem " + idadeGabriela + " anos <br>");
+    // document.write("Mary tem " + (ano - 1990) + " anos <br>");
+    // document.write("Gabriel tem " + (ano - 1979) + " anos <br>");sss
+
+    var media = (idadeBrunno + idadeJoao + idadeGabriela)/3;
+
+    document.write("<br>-----------------------------------------------------------<br>");
+    document.write("A média das idades é de " + Math.round(media) + " anos");
+    document.write("<br>-----------------------------------------------------------");
 
 </script>

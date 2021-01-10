@@ -142,3 +142,123 @@ o navegador processa  a tag <script> linha a linha, na ordem em que foram declar
 teremos a informação de que a variável ano recebe o valor 1992, desta forma, o código irã assumir 
 na parte de texto, o valor definido na variavel.
 
+Uma variável pode guardar exatamente ou praticamente o que você quiser: seja número, string ou outro 
+pedaço de código, sabemos também que é possível calcular a média de idades usando a frase 
+"A média das frases é " e concatenar com a soma das idades dividida pelo número de indivíduos.
+
+podemos também chegar na situação em que a média ou a conta que esteja resolvendo no momento possa resultar em 
+uma dizíma períodica, como pro exemplo:
+
+<meta charset="UTF-8">
+
+<script>
+    var ano = 2016;
+
+    document.write("Flávio tem " + (ano - 1977) + " anos");
+    document.write("<br>");
+    document.write("Joaquim tem " + (ano - 1996) + " anos");
+    document.write("<br");
+
+    ano = 2017
+    document.write("Barney tem " + (ano - 1976) + " anos");
+    document.write("<br>");
+
+    var media = (39 + 20 + 41)/3;
+
+    document.write("A média das idades é: " + media);
+
+
+</script>
+
+
+ao salvar e ver o resultado no navegador apresentará uma dizíma períodica e para corrigir essa questão, 
+usaremos da mesma forma como utilizamos o document.write() para apresentar o texto ou as strings no html via JS, 
+utilizaremos a matemática, chamando o comando Math e a função round(), fará o arredondamento do valor resultado
+hoje em média.
+
+ficando assim:
+
+var media = (39 + 20 + 41)/3;
+
+document.write("A média das idades é: " + Math.round(media) + " anos");
+
+aqui também, além de aprendermos a arredondar a média, podemos armazenar valores, para que possamos 
+utilizar os mesmos em diversos lugares do nosso código.
+
+
+<meta charset="UTF-8">
+
+<script>
+    var ano = 2016;
+    var idadeflavio = (ano - 1977);
+    var idadejoaquim = (ano - 1996);
+
+    document.write("Flávio tem " + idadeflavio + " anos");
+    document.write("<br>");
+    document.write("Joaquim tem " + idadejoaquim + " anos");
+    document.write("<br");
+
+    ano = 2017
+    var idadebarney = (ano - 1976);
+    document.write("Barney tem " + idadebarney + " anos");
+    document.write("<br>");
+
+    var media = (idadeflavio + idadejoaquim + idadebarney)/3;
+
+    document.write("A média das idades é: " + media);
+
+</script>
+
+
+sabemos que para efetuar o pulo de linha, basta inserir a tag <br> e no caso 
+de ter que pular varias linhas ou efetuar várias quebras de linha...
+pode fazer declarando da seguinte forma 
+
+document.write("<br><br><br>");
+
+colocando várias tags, porém, sempre vai ter que ficar alterando em vários locais do código, aonde
+é preciso efetuar as quebras de linha.
+
+ou pode ser efetuado também, criando uma váriavel:
+
+var puloLinha = "<br>";
+Assim, so altera em um local e será alterado no código inteiro.
+
+
+para criar uma função, em vez de ficar escrevendo diversas vezes as mesmas funcionalidades, é necessário fazer o seguinte:
+
+todas as funçoes que serão criadas precisam estar dentro da tag <script>, ou seja, serão declaradas no inicio do código.
+declarando uma função através da palavra function, seguido de um nome para a mesma.
+
+function nomeDaFuncao() {
+
+}
+
+por exemplo, função para calcular ou efetuar uma divisao:
+
+<meta charset="UTF-8">
+
+<input id="textinput" name="textinput" value="" type="text">
+<button onclick="enviar()">Confirmar</button>
+
+<script>
+
+
+    var numerador;
+    var denominador;
+    var fracao = numerador / denominador;
+
+    var aproximar = Math.round(fracao);
+
+    function divisao(numerador,denominador) {
+        document.write("A divisão entre " + numerador + " e " + denominador + " resulta em " + aproximar);
+    }
+
+
+</script>
+
+
+neste meio que estamos estudando, caso algum trecho do código não é para ser interpretado, 
+mas, também, não queremos apagar, podemos simplesmente colocar //, que irá deixar o trecho comentado
+
+
