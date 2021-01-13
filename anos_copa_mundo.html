@@ -1,0 +1,32 @@
+<meta charset="UTF-8">
+
+
+
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function titulo(title) {
+        document.write("<h1>" + title + "</h1>");
+        pulaLinha();
+    }
+
+    var anoCopa = 1930;
+
+    titulo("Anos que acontecerão Copas do Mundo: ");
+    var limiteAnoCopa = parseInt(prompt("Insira o ano limite, para efetuar a verificação: "));
+
+    while(anoCopa <= limiteAnoCopa) {
+        mostra("<br>-----------------------------------------------------------<br>");
+        mostra("No ano de " + anoCopa + " teve copa do Mundo!")
+        anoCopa = anoCopa + 4;
+        mostra("<br>-----------------------------------------------------------<br>");
+    }
+
+</script>

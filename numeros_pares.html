@@ -1,0 +1,44 @@
+<meta charset="UTF-8">
+
+
+
+<script>
+
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function titulo(title) {
+        document.write("<h1>" + title + "</h1>");
+        pulaLinha();
+    }
+
+    function verificaNumPar(num) {
+    
+        if(num % 2 == 0){
+            mostra("O " + num + " é um número par!");
+        }
+        pulaLinha();
+    }
+
+    var n = 2;
+
+    titulo("Números Pares: ");
+
+    var nLimite = parseInt(prompt("Insira um valor limite para analisar os números que são pares: "));
+
+    mostra("<br>-----------------------------------------------------------<br>");
+    while(n <= nLimite) {
+        verificaNumPar(n)
+        n = n + 2;
+    }
+    mostra("<br>-----------------------------------------------------------<br>");
+
+    
+
+</script>

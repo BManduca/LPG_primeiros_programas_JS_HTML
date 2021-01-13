@@ -262,3 +262,18 @@ neste meio que estamos estudando, caso algum trecho do código não é para ser 
 mas, também, não queremos apagar, podemos simplesmente colocar //, que irá deixar o trecho comentado
 
 
+Aula 11(capitulo 5) - Interagindo com o usuário
+
+neste mundo da programação, caso queira consultar ao usuário uma informação, 
+existe a função prompt, onde passamos como parâmetro uma pergunta, umaa afirmação..algo que 
+direcione o usuário a preencher o pop-up que aparecerá com alguma informação.
+
+ex.: prompt("Qual sua altura?")
+
+
+Aula 09 - Jogo da adivinhação (capitulo 6)
+
+para gerar número aleátorios em JS temos a função Math.random(), porém,
+mostará um número com muitas casas decimais.... O que podemos fazer é multiplicar por a função, ou seja,
+ Math.random * 10 e após esse processo, podemos arredondar esse valor usando a função round().
+ 

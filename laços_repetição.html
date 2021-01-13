@@ -1,0 +1,32 @@
+<meta charset="UTF-8">
+<script>
+
+    function pulaLinha() {
+        document.write("<br><br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function titulo(title) {
+        document.write("<h1>" + title + "</h1>");
+        pulaLinha();
+    }
+
+    titulo("Laços de repetição: ");
+
+    /* for( var i = 0; i < 10; i++ ) {
+        mostra("Posição " + i + " --> " + (2 * i) );
+    } */
+
+    var i = 1;
+
+    while(i <= 10){
+        mostra("O dobro de " + i + " é " + (2 * i) );
+        // i += 1;
+        i++;
+    }
+
+</script>

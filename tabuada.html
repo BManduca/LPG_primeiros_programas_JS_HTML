@@ -1,15 +1,35 @@
 <meta charset="UTF-8">
 <script>
-    var multi = 8;
 
-    document.write(multi + " vezes 1 é " + multi * 1 + "<br>");
-    document.write(multi + " vezes 2 é " + multi * 2 + "<br>");
-    document.write(multi + " vezes 3 é " + multi * 3 + "<br>");
-    document.write(multi + " vezes 4 é " + multi * 4 + "<br>");
-    document.write(multi + " vezes 5 é " + multi * 5 + "<br>");
-    document.write(multi + " vezes 6 é " + multi * 6 + "<br>");
-    document.write(multi + " vezes 7 é " + multi * 7 + "<br>");
-    document.write(multi + " vezes 8 é " + multi * 8 + "<br>");
-    document.write(multi + " vezes 9 é " + multi * 9 + "<br>");
-    document.write(multi + " vezes 10 é " + multi * 10 + "<br>");
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function titulo(title) {
+        document.write("<h1>" + title + "</h1>");
+        pulaLinha();
+    }
+
+    var multi = 8;
+    var num = 1;
+
+    titulo("Aplicando a tabuada do " + multi + ": ");
+
+    /* while(num <= 10) {
+        mostra(multi + " vezes " + num + " = " + (multi * num));
+        num += 1
+    } */
+
+    for(num; num <= 10; num++){
+
+        mostra(multi + " vezes " + num + " = " + (multi * num));
+
+    }
+    mostra("FIM");
+
 </script>

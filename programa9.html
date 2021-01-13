@@ -1,0 +1,31 @@
+<meta charset="UTF-8">
+
+
+
+<script>
+
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function titulo(title) {
+        document.write("<h1>" + title + "</h1>");
+        pulaLinha();
+    }
+
+    var idade = parseInt(prompt("Digite sua idade"));
+
+    titulo("Estudos sobre laços de repetição e função isNaN()");
+
+    while( isNaN(idade) ) {
+        idade = parseInt(prompt("Digite sua idade"));    
+    }
+
+    mostra("Sua idade é " + idade);
+    
+</script>

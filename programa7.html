@@ -1,0 +1,38 @@
+<meta charset="UTF-8">
+
+
+
+<script>
+
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function titulo(title) {
+        document.write("<h1>" + title + "</h1>");
+        pulaLinha();
+    }
+
+    nInicial = 30;
+    nFinal = 40;
+
+    mostra(nInicial);
+    while(nInicial < nFinal) {
+
+        nInicial = nInicial + 1;
+
+        if(nInicial != 33 && nInicial != 37) {
+            mostra(nInicial);
+        }
+
+
+    }
+    mostra("FIM")
+    
+
+</script>

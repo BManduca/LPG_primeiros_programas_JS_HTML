@@ -1,0 +1,43 @@
+<meta charset="UTF-8">
+<script>
+
+    var loginCadastrado = "alura";
+    var senhaCadastrada = "alura321";
+
+    var tentativaAtual = 1;
+    var maxTentativas = 3;
+
+    while(tentativaAtual <= maxTentativas) {
+
+        var loginInformado = prompt("Login: ");
+        var senhaInformada = prompt("Password: ");
+
+        // if(loginCadastrado == loginInformado && senhaCadastrada == senhaInformada) {
+        //     alert("Seja bem-vindo ao nosso sistema " + loginInformado + ".");
+        //     tentativaAtual = maxTentativas;
+        // } else {
+        //     if(loginCadastrado != loginInformado && senhaCadastrada == senhaInformada) {
+        //         alert("Login informado está incorreto!");
+        //         tentativaAtual += 1;
+        //     } else {
+        //         alert("Senha informada está incorreta!");
+        //         tentativaAtual += 1;
+        //     }
+        // }
+
+        if(loginCadastrado == loginInformado && senhaCadastrada == senhaInformada) {
+            alert("Seja bem-vindo ao nosso sistema " + loginInformado + ".");
+            tentativaAtual = maxTentativas;
+        } else {
+            if(tentativaAtual == 3) {
+                alert("Você alcançou o número máximo de tentativas! Favor entrar em contato com Administrador");
+            } else {
+                alert("Login ou senha inválidos. Tente novamente!");
+            }
+        }
+
+        tentativaAtual += 1;
+
+    }
+
+</script>

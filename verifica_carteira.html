@@ -1,0 +1,36 @@
+<meta charset="UTF-8">
+
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function verifica(valor1,resposta1) {
+        if(valor1 >= 18 && resposta1 == "S"){
+            mostra("Você já está apto a dirigir");
+        } else {
+            if(valor1 >= 18 && resposta1 == "N") {
+                mostra("Você ainda precisa fazer a cateira de motorista, para poder dirigir.");
+            } else {
+                if(valor1 < 18 && resposta1 == "S") {
+                    mostra("Resposta um pouco estranha não?! <br> Primeiro faça dezoito anos para poder usufruir da carteira!");
+                    mostra("Se não, as consequências podem lá não ser tão boas.");
+                }
+            }
+        }
+    }
+
+    var idade = parseInt(prompt("Qual é sua idade?"));
+    var temCarteira = prompt("Tem carteira? Responda S ou N");
+
+    verifica(idade,temCarteira);
+
+
+
+
+</script>

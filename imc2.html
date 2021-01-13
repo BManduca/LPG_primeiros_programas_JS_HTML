@@ -9,16 +9,50 @@
         pulaLinha();
     }
 
+    function IMC(peso, altura) {
+
+        var imc = Math.round(peso / (altura * altura));
+        return imc;
+    }
+
     function calculaImc(nome, peso, altura) {
 
         var imc = Math.round(peso / (altura * altura));
         return "O imc do paciente " + nome + " é " + imc;
     }
 
-    var nomePaciente = "Brunno";
-    var pesoPaciente = 75;
-    var alturaPaciente = 1.64;
+    function avaliarIMC(valor1) {
+        if (valor1 < 18.5){
+            mostra("Você se encontra abaixo do peso!");
+        } else {
+            if(valor1 > 18.5 && valor1 <= 24.9) {
+                mostra("Você se encontra com peso ideal!");
+            } else {
+                if(valor1 > 25 && valor1 <= 29.9) {
+                    mostra("Você se encontra com sobrepeso!");
+                } else {
+                    if(valor1 > 30 && valor1 <= 34.9) {
+                        mostra("Você se encontra com obesidade nível I!");
+                    } else {
+                        if(valor1 > 35 && valor1 <= 39.9) {
+                            mostra("Você se encontra com obesidade nível II!");
+                        }else {
+                            if(valor1 > 40) {
+                                mostra("Você se encontra com obesidade nível III!");
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    var nomePaciente = prompt("Informa o nome do(a) paciente: ");
+    var pesoPaciente = prompt(nomePaciente + ", informe seu peso: ");
+    var alturaPaciente = prompt(nomePaciente + ", informe sua altura: ");
 
     var imcCalculado = calculaImc(nomePaciente, pesoPaciente, alturaPaciente);
+    var calcIMC = IMC(pesoPaciente,alturaPaciente)
     mostra(imcCalculado);
+    avaliarIMC(calcIMC);
 </script>

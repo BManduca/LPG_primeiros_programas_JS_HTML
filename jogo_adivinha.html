@@ -1,0 +1,36 @@
+<meta charset="UTF-8">
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function sorteia(nSorteio) {
+        //var numeroPensado = 5;
+        //busquei no random mover uma casa decimal a direita, fazendo a multiplicação por 10 e após isso, arredondei o valor usando 
+        //a função round().
+        var number = Math.round(Math.random() * nSorteio);
+        return number;
+    }
+
+    var n = prompt("Inisra um valor para efetuar o sorteio: ");
+
+    var numeroPensado = sorteia(n);
+
+    var chute = parseInt(prompt("E ai já sabe?   Qual o valor sorteado? "));
+
+    if(chute == numeroPensado) {
+        mostra("Parabéns! O valor inserido está correto!");
+    } else {
+        if(chute < numeroPensado) {
+            mostra("O valor inserido está incorreto! <br> O número sorteado é maior que o valor que você inseriu!");
+        } else {
+            mostra("O valor inserido está incorreto! <br> O número sorteado é menor que o valor que você inseriu!");
+        }
+    }
+
+</script>
