@@ -17,13 +17,13 @@
         return number;
     }
 
-    var n = prompt("Inisra um valor para efetuar o sorteio: ");
+    var nTentativas = 1;
+    var n = parseInt(prompt("Insira um valor para efetuar o sorteio: "));
+    var totalTentativas = parseInt(prompt("Insira a quantidade de tentativas:  "));
 
     var numeroPensado = sorteia(n);
 
-    var chute = parseInt(prompt("E ai já sabe?   Qual o valor sorteado? "));
-
-    if(chute == numeroPensado) {
+    /* if(chute == numeroPensado) {
         mostra("Parabéns! O valor inserido está correto!");
     } else {
         if(chute < numeroPensado) {
@@ -31,6 +31,30 @@
         } else {
             mostra("O valor inserido está incorreto! <br> O número sorteado é menor que o valor que você inseriu!");
         }
+    } */
+
+    while(nTentativas<=totalTentativas) {
+
+        var chute = parseInt(prompt("E ai já sabe?   Qual o valor sorteado? "));
+
+        if(chute == numeroPensado) {
+            //mostra("Parabéns! O valor inserido está correto!");
+            alert("Parabéns! O valor inserido está correto!");
+            //nTentativas = totalTentativas;
+            break;
+        } else {
+            if(chute < numeroPensado) {
+                //mostra("O valor inserido está incorreto! <br> O número sorteado é maior que o valor que você inseriu!");
+                alert("O valor inserido está incorreto!  O número sorteado é maior que o valor que você inseriu!");
+            } else {
+                //mostra("O valor inserido está incorreto! <br> O número sorteado é menor que o valor que você inseriu!");
+                alert("O valor inserido está incorreto!  O número sorteado é menor que o valor que você inseriu!");
+            }
+            alert("So resta mais " + (3-nTentativas) + " tentativa(s).");
+        }
+        nTentativas += 1;
     }
+
+    mostra("FIM DE JOGO!!");
 
 </script>

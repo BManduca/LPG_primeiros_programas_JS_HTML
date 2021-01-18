@@ -277,3 +277,12 @@ para gerar número aleátorios em JS temos a função Math.random(), porém,
 mostará um número com muitas casas decimais.... O que podemos fazer é multiplicar por a função, ou seja,
  Math.random * 10 e após esse processo, podemos arredondar esse valor usando a função round().
  
+Aula 08 - Manipulando array(capitulo 09)
+
+Sabemos que para fazer um array fixo dentro do JS
+é so fazer da seguinte forma: var segredos = [5,7,10,2];
+
+porém, se quisermos que o mesmo array, gere e guarde números aleátorios dentro 
+dele mesmo, pdoemos fazer da seguinte forma: 
+var segredos = []
+segredos.push(Math.round(Math.random() * 10));

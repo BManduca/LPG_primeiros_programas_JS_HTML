@@ -1,0 +1,95 @@
+ <meta charset="UTF-8">
+
+ <input/>
+ <button>Comparar!</button>
+
+<script>
+
+    function mostra(frase) {
+        document.write("<center>" + frase + "</center>");
+        pulaLinha();
+    }
+
+    function geraNumAleatorios() {
+        return Math.round(Math.random() * 10);
+    }
+
+    function sorteiaNumeros(quantidade) {
+
+        var segredos = [];
+
+        var cont = 1;
+
+        while(cont <= quantidade) {
+
+            var numeroAleatorio = geraNumAleatorios();
+
+            if(numeroAleatorio !== 0) {
+
+                var achou = false;
+
+
+                for(var indice=0; indice < segredos.length; indice++) {
+
+                    if(segredos[indice] == numeroAleatorio) {
+                        achou = true;
+                        break;
+                    }
+
+                }
+
+                if(achou == false) {
+                    segredos.push(numeroAleatorio);
+                    cont++;
+                }
+
+            }
+
+
+        }
+
+        return segredos;
+
+    }
+
+    //lista fixa
+    //var segredos = [5,7,10,2];
+
+    var num = geraNumAleatorios();
+
+    console.log("Tamanho do array = " + num);
+
+    var segredos = sorteiaNumeros(num);
+
+    console.log(segredos);
+
+    var input = document.querySelector("input");
+    input.focus();
+
+    function verifica() {
+
+        var achou = false;
+
+        for(var val=0; val < segredos.length; val++){
+
+            if(input.value == segredos[val]){
+                alert("Você acertou!!");
+                achou = true;
+                break;
+            }
+                
+        }
+
+        if(achou == false) {
+            alert("Você errou!!");
+        }
+
+        input.value = "";
+        input.focus();
+
+    }
+
+    var button = document.querySelector("button");
+    button.onclick = verifica;
+
+</script>

@@ -1,0 +1,39 @@
+<meta charset="UTF-8">
+
+
+<h1> Verificando as letras presentes no array: </h1>
+<!-- <input/> -->
+<button>Verificar</button>
+
+<script>
+
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write("<center>" + frase + "</center>");
+        pulaLinha();
+    }
+
+    function titulo(title) {
+        document.write("<center><h1>" + title + "</h1></center>");
+        pulaLinha();
+    }
+
+    var letras = ['A', 'B', 'C', 'D'];
+
+    function verificaLetras() {
+
+        titulo("Verificando as letras presentes no array: ");
+
+        for( var indice = 0; indice < letras.length; indice++ ) {
+            mostra("A letra " + indice + " é a " + letras[indice])
+        }
+
+    }
+
+   var button = document.querySelector("button");
+   button.onclick = verificaLetras;
+
+</script>

@@ -1,0 +1,26 @@
+<meta charset="UTF-8">
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write("<center>" + frase + "</center>");
+        pulaLinha();
+    }
+
+    function titulo(title) {
+        document.write("<center><h1>" + title + "</h1></center>");
+        pulaLinha();
+    }
+
+    titulo("Repetições aninhadas.");
+    mostra("---------------------------------------------------")
+    for(var linha=1; linha<=3; linha++){
+        for(linha2=1; linha2<=3; linha2++){
+            mostra("|      &emsp;***********&emsp;      |");
+        }
+    }
+    mostra("---------------------------------------------------")
+
+</script>
